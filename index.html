@@ -1,32 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panther Jewellers</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-        .highlight {
-            color: #d4af37;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panther Jewellers</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fff8f0;
+      color: #4d2c19;
+    }
+    header {
+      background-color: #d4af37;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #8b5e3c;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-image: url('https://i.imgur.com/1aZ7c5E.jpg');
+      background-size: cover;
+      color: white;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #8b5e3c;
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 10px;
+    }
+    .products, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product {
+      border: 1px solid #d4af37;
+      padding: 10px;
+      width: 150px;
+      text-align: center;
+      background-color: white;
+      border-radius: 8px;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .gallery img {
+      border: 1px solid #d4af37;
+      padding: 10px;
+      width: 150px;
+      border-radius: 8px;
+      background-color: white;
+    }
+    .contact {
+      background-color: #f7e9d5;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Panther Jewellers</h1>
-    <p>Your one-stop destination for stylish silver jewellery!</p>
-    <p>Explore the finest <span class="highlight">Bangkok-style</span> and <span class="highlight">designer silver jewellery</span> here.</p>
+  <header>
+    Panther Jewellers
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hero" id="home">
+    Welcome to Panther Jewellers
+  </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We bring you elegant and traditional silver jewellery handcrafted in Meerut. Our collection includes timeless designs and glamorous pieces for every occasion.</p>
+  </section>
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://i.imgur.com/SpS7zWg.jpg" alt="Bali">
+        <div>Bali</div>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/q6zYrfR.jpg" alt="Jhumka">
+        <div>Jhumka</div>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/CnWpBAf.jpg" alt="Kada">
+        <div>Kada</div>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/T97cPUr.jpg" alt="Chain">
+        <div>Chain</div>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/NJ5wYMT.jpg" alt="Ring">
+        <div>Ring</div>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/wYzI89T.jpg" alt="Anklet">
+        <div>Anklet</div>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/c0vO8qw.jpg" alt="Toe Rings">
+        <div>Toe Rings</div>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/g50z3fZ.jpg" alt="Pendant">
+        <div>Pendant</div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://i.imgur.com/e1hLQ2U.jpg" alt="Jewellery 1">
+      <img src="https://i.imgur.com/Bn6jHkl.jpg" alt="Jewellery 2">
+      <img src="https://i.imgur.com/d8z2Dcm.jpg" alt="Jewellery 3">
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>City:</strong> Meerut</p>
+    <p><strong>WhatsApp:</strong> 9719568843</p>
+  </section>
 </body>
 </html>
